@@ -1,0 +1,10 @@
+node_modules/
+# regenerate with: python gen_data.py
+data/
+# benchmark outputs
+runs/
+# isolated Claude Code config used by run.py
+.claude_home/
+.env
+__pycache__/
+*.pyc

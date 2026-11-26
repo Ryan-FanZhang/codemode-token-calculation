@@ -1,0 +1,20 @@
+{
+  "fs": {
+    "command": "node",
+    "args": ["{ROOT}/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js", "{DATA}/fs"]
+  },
+  "sqlite": {
+    "command": "uvx",
+    "args": ["--with", "mcp==1.30.0", "mcp-server-sqlite==2025.4.25", "--db-path", "{RUN}/shop.db"],
+    "env": { "UV_LINK_MODE": "copy" }
+  },
+  "web": {
+    "command": "node",
+    "args": ["{ROOT}/node_modules/@playwright/mcp/cli.js", "--headless", "--isolated"]
+  },
+  "memory": {
+    "command": "node",
+    "args": ["{ROOT}/node_modules/@modelcontextprotocol/server-memory/dist/index.js"],
+    "env": { "MEMORY_FILE_PATH": "{RUN}/memory.jsonl" }
+  }
+}

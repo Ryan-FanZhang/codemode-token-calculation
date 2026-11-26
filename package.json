@@ -1,0 +1,18 @@
+{
+  "name": "codemode-vs-mcp-bench",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Token and efficiency benchmark: MCP tool calling vs Code Mode, using Claude Code as the harness",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@modelcontextprotocol/server-filesystem": "^1.0.0",
+    "@modelcontextprotocol/server-memory": "^1.0.0",
+    "@playwright/mcp": "^0.0.86"
+  }
+}
